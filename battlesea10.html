@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		.bg{
+			background-color: black;
+			
+		}
+		.bang-img, .mem-img, .treasure-img{
+			display: none;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<div style="position: absolute;" class="pl-2 pt-2">
+		<h5>Корабль с 4 клетками = 1</h5>
+		<h5>Корабль с 3 клетками = 2</h5>
+		<h5>Корабль с 2 клетками = 4</h5>
+		<h5>Корабль с 1 клеткой = 4</h5>
+		<h5>Корабли не касаются друг <br>друга, даже углами</h5>
+	</div>
+	<div class="container ">
+		<h1 class="task">Морской бой!</h1>
+		<h1>Найди все корбали противника!</h1>
+		<div class="row">
+			<div class="col-1 px-5 py-3  bg-warning text-center border"></div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>1</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>2</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>3</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>4</h4>
+			</div>
+			<div class="col-1 px-5  py-3 bg-warning text-center border">
+				<h4>5</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>6</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>7</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>8</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>9</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>10</h4>
+			</div>
+		</div>
+		<!--A-->
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>A</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+		</div>
+		<!--B-->
+		<div class="row">
+			<div class="col-1  px-5 py-4 bg-warning text-center border">
+				<h4>B</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship">
+
+			</div>
+			<div class="col-1  px-5 py-4 bg border mimo">
+			
+			</div>
+			<div class="col-1  px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border mimo">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+		</div>
+		<!--C-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  bg-warning text-center border">
+				<h4>C</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border mimo">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border mimo">
+				
+			</div>	
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+		</div>
+		<!--D-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  bg-warning text-center border">
+				<h4>D</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border  mimo">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border pomosh">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+		</div>
+		<!--E-->
+		<div class="row">
+			<div class="col-1 px-5 py-4  bg-warning text-center border">
+				<h4>E</h4>
+			</div>
+			<div class="col-1 px-5 py-4  bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border mimo">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border mimo ">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+		</div>
+		<!--F-->
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>F</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border  ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+		</div>
+		<!--G-->
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>G</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+		</div>
+		<!--H-->
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>H</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+		</div>
+		<!--I-->
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>I</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+		</div>
+		<!--J-->
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>J</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border mimo">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+
+	
+	let ship = document.querySelectorAll(".ship");
+	let mimo = document.querySelectorAll(".mimo");
+
+	for(let index=0;index<22;index++){
+		ship[index].onclick = function(){
+			ship[index].style.backgroundImage = "url(bang.png)";
+			ship[index].style.backgroundSize= "100% 100%" 
+			
+		/*	let timer = function() { //опережают думают над этим	
+				ship[i].style.background = "gray"
+				ship[i].style.transition = "2s"
+			}
+			setTimeout(timer, 1000)  */
+		}
+	}
+
+	for(let i=0;i<77;i++){
+		mimo[i].onclick = function(){
+			mimo[i].style.backgroundImage = "url(miss.png)";
+			mimo[i].style.backgroundSize = "100% 100%";
+		}
+	}
+	
+	document.querySelector(".pomosh").onclick = function() { //опережают думают над этим 2	
+		document.querySelector(".pomosh").style.backgroundImage = "url(button.png)";
+		document.querySelector(".pomosh").style.backgroundSize = "100% 100%";
+		for(let i=0;i<15;i++){
+			mimo[i].style.backgroundImage = "url(miss.png)";
+			mimo[i].style.backgroundSize = "100% 100%";
+		}
+	}
+</script>
+</body>
+</html>
